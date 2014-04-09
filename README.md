@@ -8,4 +8,4 @@ update_openssl
   [http://www.openssl.org/news](http://www.openssl.org/news/)
 
 ### How to use 如何使用
-  curl -sSL https://raw.githubusercontent.com/cjsund/update_openssl/master/updatessl.sh | bash
+    curl -sSL https://raw.githubusercontent.com/cjsund/update_openssl/master/updatessl.sh | bash
