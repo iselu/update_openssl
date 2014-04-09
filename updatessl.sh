@@ -7,7 +7,7 @@ then
     exit 2
 fi
 wget http://www.openssl.org/source/openssl-1.0.1g.tar.gz
-tar -xzvf openssl-1.0.1g.tar.gz
+tar -xzf openssl-1.0.1g.tar.gz
 cd openssl-1.0.1g/
 yum -y install zlib
 ./config --prefix=/usr/local/ssl --openssldir=/usr/local/ssl shared
