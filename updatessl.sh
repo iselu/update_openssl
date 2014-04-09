@@ -3,7 +3,7 @@ set -e
 
 if [[ `openssl version` == 'OpenSSL 1.0.1g 7 Apr 2014' ]]
 then
-    echo "openssl is OpenSSL 1.0.1g 7 Apr 2014"
+    echo "Update openssl to 1.0.1g 7 Apr 2014"
     exit 2
 fi
 echo "You openssl version"
