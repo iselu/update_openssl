@@ -11,7 +11,6 @@ openssl version
 wget http://www.openssl.org/source/openssl-1.0.1g.tar.gz
 tar -xzf openssl-1.0.1g.tar.gz
 cd openssl-1.0.1g/
-yum -y install zlib
 ./config --prefix=/usr/local/ssl --openssldir=/usr/local/ssl shared
 make && make install
 mv /usr/bin/openssl /usr/bin/openssl.old
