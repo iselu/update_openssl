@@ -27,16 +27,16 @@ update_0.9.8(){
 }
 
 update_1.0.1(){
-	if [[ `openssl version` == 'OpenSSL 1.0.1g 7 Apr 2014' ]]
+	if [[ `openssl version` == 'OpenSSL 1.0.1h 7 Apr 2014' ]]
 	then
-	    echo "Update openssl to 1.0.1g 7 Apr 2014"
+	    echo "Update openssl to 1.0.1h 7 Apr 2014"
 	    exit 2
 	fi
 	echo "You openssl version"
 	openssl version
-	wget http://www.openssl.org/source/openssl-1.0.1g.tar.gz
-	tar -xzf openssl-1.0.1g.tar.gz
-	cd openssl-1.0.1g/
+	wget https://www.openssl.org/source/openssl-1.0.1h.tar.gz
+	tar -xzf openssl-1.0.1h.tar.gz
+	cd openssl-1.0.1h/
 	./config --prefix=/usr/local/ssl --openssldir=/usr/local/ssl shared
 	make && make install
 	mv /usr/bin/openssl /usr/bin/openssl.old
