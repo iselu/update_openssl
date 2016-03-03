@@ -34,9 +34,9 @@ update_1.0.1(){
 	fi
 	echo "You openssl version"
 	openssl version
-	wget https://www.openssl.org/source/openssl-1.0.1h.tar.gz
-	tar -xzf openssl-1.0.1h.tar.gz
-	cd openssl-1.0.1h/
+	wget https://www.openssl.org/source/openssl-1.0.1s.tar.gz
+	tar -xzf openssl-1.0.1s.tar.gz
+	cd openssl-1.0.1s/
 	./config --prefix=/usr/local/ssl --openssldir=/usr/local/ssl shared
 	make && make install
 	mv /usr/bin/openssl /usr/bin/openssl.old
